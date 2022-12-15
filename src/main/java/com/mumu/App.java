@@ -77,12 +77,12 @@ public class App {
             String name = rs.getString("name");
             int total = rs.getInt("total");
             int current = rs.getInt("current");
-
             System.out.printf("%4d | %10s | %4d | %4d\n", bid, name, total, current);
-            rs.close();
-            ps.close();
-            c.close();  // 关闭掉
         }
+
+        rs.close();
+        ps.close();
+        c.close();  // 关闭掉
     }
 }
 
